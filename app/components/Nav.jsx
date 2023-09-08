@@ -1,19 +1,14 @@
-import React from 'react'
-
 export default function Nav() {
   return (
     <div>
-        <div class="nav_background"></div>
-        <nav class="wide_nav_container">
-            <div class="nav_left">
-                <a href="/" class="name">Brian Cordisco</a>
+        <div className="nav_background"></div>
+        <nav className="wide_nav_container">
+            <div className="nav_left">
+                <a href="/" className="name">Brian Cordisco</a>
             </div>
-            <div class="nav_right">
-                <div class="nav_buttons">
-                    <a href="/" class="home_button">
-                        Home
-                    </a>
-                    <a href="./assets/cv.pdf" class="about_button">
+            <div className="nav_right">
+                <div className="nav_buttons">
+                    <a href="./assets/cv.pdf" className="about_button">
                        Resume
                     </a>
                 </div>
