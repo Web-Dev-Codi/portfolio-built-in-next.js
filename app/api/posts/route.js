@@ -1,13 +1,15 @@
+import { NextResponse } from "next/server.js";
+import connectDB from "../../../config/database.js";
+import Client from "../models/ClientsModel.js";
 import { Resend } from "resend";
 import express from "express";
 import { check, validationResult } from "express-validator";
-import Client from "../models/ClientsModel.js";
 
 const router = express.Router();
 const resend = new Resend(process.env.RESEND_KEY);
 
 router.post(
-  "/success.html",
+  "/success",
   [
     check("name").isLength({ min: 3 }).trim().escape(),
     check("email").isEmail().normalizeEmail(),
@@ -52,12 +54,10 @@ router.post(
       });
     } catch (error) {
       console.log(error);
-      res
-        .status(500)
-        .json({
-          success: false,
-          error: "Adding Form submission went wrong Bro, Investigate",
-        });
+      res.status(500).json({
+        success: false,
+        error: "Adding Form submission went wrong Bro, Investigate",
+      });
     }
 
     const errors = validationResult(req);
