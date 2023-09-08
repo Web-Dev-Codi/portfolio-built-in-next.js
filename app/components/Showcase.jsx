@@ -9,7 +9,7 @@ export default function Showcase() {
             </div>
             <section className="content-wrapper" id="showcase">
                 <div className="showcase-card" id="showcase-card">
-                    <Image alt="Inquizable" loading="lazy" width="100%" height="100%" src="../../public/images/inquizable.webp" decoding="sync" class="showcase-card__image" />
+                    <Image alt="Inquizable" loading="lazy" width="100%" height="100%" src="../../public/images/inquizable.webp" decoding="sync" className="showcase-card__image" />
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Inquizable</h2>
                         <div className="showcase-card__tech_stack">Tech Used: JavaScript, React, TailwindCSS, Node.js</div>
@@ -64,7 +64,7 @@ export default function Showcase() {
                                 are
                                 calculated from
                                 daily expenditure.</p>
-                            <a href="https://dietracker.vercel.app/" class="showcase-card__visit">Visit Site <i
+                            <a href="https://dietracker.vercel.app/" className="showcase-card__visit">Visit Site <i
                                     className="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ export default function Showcase() {
                             <p className="showcase-card__excerpt">Generate a custom image from text within seconds using AI.
                             </p>
                             <a href="https://texttoimagegenerator.vercel.app/" className="showcase-card__visit">Visit
-                                Site <i class="fas fa-long-arrow-alt-right"></i></a>
+                                Site <i className="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                     </div>
                 </div>

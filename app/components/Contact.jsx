@@ -3,7 +3,7 @@ export default function Contact() {
     <div>
         <div className="form_wrapper" id="contact">
             <h3 className="contact">Contact</h3>
-            <form id="form" method="POST" action="/success.html">
+            <form id="form" method="POST" action="/success">
                 <div>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" minlength="3" maxlength="30" placeholder="Name"

@@ -8,7 +8,7 @@ export default function Nav() {
             </div>
             <div className="nav_right">
                 <div className="nav_buttons">
-                    <a href="./assets/cv.pdf" className="about_button">
+                    <a href="../../public/images/cv.pdf" className="about_button">
                        Resume
                     </a>
                 </div>

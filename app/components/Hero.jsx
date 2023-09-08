@@ -24,19 +24,19 @@ export default function Hero() {
                     <div className="hero_socials">
                         <a href="https://twitter.com/WebDevCodi">
                             <div className="hero_social">
-                                <Image src="/assets/twitter-256.svg" alt="twitter"/>
+                                <Image src="../../public/images/twitter-256.svg" alt="twitter"/>
                                 <p>Twitter</p>
                             </div>
                         </a>
                         <a href="https://github.com/Web-Dev-Codi">
                             <div className="hero_social">
-                                <Image src="/assets/github-256.svg" alt="github" />
+                                <Image src="../../public/images/github-256.svg" alt="github" />
                                 <p>Github</p>
                             </div>
                         </a>
                         <a href="https://www.linkedin.com/in/brian-cordisco-500250205/">
                             <div className="hero_social">
-                                <Image src="/assets/linkedin-256.svg" alt="linkedin"/>
+                                <Image src="../../public/images/linkedin-256.svg" alt="linkedin"/>
                                 <p>Linkedin</p>
                             </div>
                         </a>

@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Html from "../../public/assets/html.svg"
 import Css from "../../public/assets/css3.svg"
 import Js from "../../public/assets/javascript.svg"
@@ -27,30 +28,30 @@ export default function Skills() {
                 </div>
                 <div className="skill_list">
                     <div>
-                        <img src={Html} alt="html" loading="lazy" width="80" height="80" style={{color:"transparent"}}/>
+                        <Image src={Html} alt="html" loading="lazy" width="80" height="80" style={{color:"transparent"}}/>
                     </div>
                     <div>
-                        <img alt="css" loading="lazy" width="80" height="80" style={{color:"transparent"}}
+                        <Image alt="css" loading="lazy" width="80" height="80" style={{color:"transparent"}}
                             src={Css}/>
                     </div>
                     <div>
-                        <img alt="git" loading="lazy" width="80" height="80" style={{color:"transparent"}}
+                        <Image alt="git" loading="lazy" width="80" height="80" style={{color:"transparent"}}
                             src={Git}/>
                     </div>
                     <div>
-                        <img alt="javaScript" loading="lazy" width="80" height="80" style={{color:"transparent"}}
+                        <Image alt="javaScript" loading="lazy" width="80" height="80" style={{color:"transparent"}}
                             src={Js}/>
                     </div>
                     <div>
-                        <img alt="node.js" loading="lazy" width="80" height="80" style={{color:"transparent"}}
+                        <Image alt="node.js" loading="lazy" width="80" height="80" style={{color:"transparent"}}
                             src={Node}/>
                     </div>
                     <div>
-                        <img alt="react" loading="lazy" width="80" height="80" style={{color:"transparent"}}
+                        <Image alt="react" loading="lazy" width="80" height="80" style={{color:"transparent"}}
                             src={React}/>
                     </div>
                     <div>
-                        <img alt="typescript" loading="lazy" width="80" height="80" style={{color:"transparent"}}
+                        <Image alt="typescript" loading="lazy" width="80" height="80" style={{color:"transparent"}}
                             src={Ts}/>
                     </div>
                 </div>
