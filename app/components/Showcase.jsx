@@ -10,6 +10,7 @@ import BG from "../../public/images/graywavewide.png"
 
 const showcaseStyle = {
   maxInlineSize: '100%',
+  maxHeight: '100%',
   blockSize: 'auto',
   objectFit: 'contain',
   transition: 'transform 3s ease',
@@ -32,7 +33,7 @@ export default function Showcase() {
             </div>
             <section className="content-wrapper" id="showcase">
                 <div className="showcase-card" id="showcase-card">
-                    <Image alt="Inquizable" loading="lazy" width={100} height={100} src={Inquiz} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
+                    <Image alt="Inquizable" loading="lazy" src={Inquiz} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Inquizable</h2>
                         <div className="showcase-card__tech_stack">Tech Used: JavaScript, React, TailwindCSS, Node.js</div>
@@ -47,7 +48,7 @@ export default function Showcase() {
                     </div>
                 </div>
                 <div className="showcase-card" id="showcase-card">
-                    <Image alt="github finder" loading="lazy" width={100} height={100} src={Git} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
+                    <Image alt="github finder" loading="lazy" src={Git} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">GitHub Finder</h2>
                         <div className="showcase-card__tech_stack">Tech Used: Vite.js, TailwindCSS, JavaScript, Github API
@@ -62,7 +63,7 @@ export default function Showcase() {
                     </div>
                 </div>
                 <div className="showcase-card" id="showcase-card">
-                    <Image alt="Global Weather" loading="lazy" width={100} height={100} src={Weather} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
+                    <Image alt="Global Weather" loading="lazy" src={Weather} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Global Weather App</h2>
                         <div className="showcase-card__tech_stack">Tech Used: React, JavaScript, TailwindCSS</div>
@@ -77,7 +78,7 @@ export default function Showcase() {
                     </div>
                 </div>
                 <div className="showcase-card" id="showcase-card">
-                    <Image alt="Diet-Tracker" loading="lazy" width={100} height={100} src={Diet} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
+                    <Image alt="Diet-Tracker" loading="lazy" src={Diet} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Diet-Tracker</h2>
                         <div className="showcase-card__tech_stack">Tech Used: JavaScript, HTML, CSS</div>
@@ -93,7 +94,7 @@ export default function Showcase() {
                     </div>
                 </div>
                 <div className="showcase-card" id="showcase-card">
-                    <Image alt="text to image" loading="lazy" width={100} height={100} src={Ai} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
+                    <Image alt="text to image" loading="lazy" src={Ai} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Text to Image Generator</h2>
                         <div className="showcase-card__tech_stack">
@@ -108,7 +109,7 @@ export default function Showcase() {
                     </div>
                 </div>
                 <div className="showcase-card" id="showcase-card">
-                    <Image alt="Flixx Movie Database" loading="lazy" width={100} height={100} src={Flixx} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
+                    <Image alt="Flixx Movie Database" loading="lazy" src={Flixx} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Flixx Movie Database</h2>
                         <div className="showcase-card__tech_stack">Tech Used: JavaScript, HTML, CSS, Webpack</div>

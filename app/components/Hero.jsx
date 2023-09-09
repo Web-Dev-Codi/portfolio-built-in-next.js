@@ -6,6 +6,7 @@ import HeroImage from "../../public/images/squarehero.jpg"
 
 const imageStyle = {
   height: '100%',
+  width: '100%'
 }
 export default function Hero() {
   return (
@@ -14,7 +15,7 @@ export default function Hero() {
             <div className="hero_wrapper">
                  <div className="hero_left">
                     <h1>
-                        "Crafting the Web, One Pixel at a Time"
+                        "Crafting the Web, <br></br> One Pixel at a Time"
                     </h1>
                     <p className="hero_text">
                         "Bringing your vision to life with passion and precision! Let's collaborate to create dynamic, innovative web solutions that are as unique as they are impressive."

@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Nav() {
   return (
     <div>
@@ -8,7 +10,7 @@ export default function Nav() {
             </div>
             <div className="nav_right">
                 <div className="nav_buttons">
-                    <a href="../../public/images/cv.pdf" className="about_button">
+                    <a href="../../public/images/cv.pdf" className="about_button" target="_blank" rel="noopener norefferrer" download>
                        Resume
                     </a>
                 </div>

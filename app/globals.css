@@ -218,7 +218,7 @@ main {
 .hero_image {
 	display: grid;
 	place-content: center;
-	/* width: 100%; */
+	width: 100%;
 	height: 100%;
 	clip-path: circle(27.1% at 50% 52%);
 }
@@ -713,7 +713,7 @@ h3 {
 }
 .close-modal {
 	display: flex;
-	justify-content: end;
+	justify-content: flex-end;
 }
 
 .form-modal {
@@ -1021,10 +1021,10 @@ button:focus {
 }
 
 @media screen and (max-width: 720px) {
-	.wide_nav_container,
+	/*.wide_nav_container,
 	.nav_background {
 		position: fixed;
-	}
+	}*/
 
 	.hero_container {
 		padding-top: 100px;
