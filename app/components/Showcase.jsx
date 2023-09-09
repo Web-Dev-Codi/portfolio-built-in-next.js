@@ -12,7 +12,7 @@ const showcaseStyle = {
   maxInlineSize: '100%',
   maxHeight: '100%',
   blockSize: 'auto',
-  objectFit: 'contain',
+  objectFit: 'fill',
   transition: 'transform 3s ease',
   backfaceVisibility: 'hidden',
   posistion: 'relative',
@@ -20,14 +20,15 @@ const showcaseStyle = {
 }
 
 const backgroundStyle = {
+  backgroundImage: 'url("../../public/images/wave1440.svg")',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
 }
 
 export default function Showcase() {
   return (
-    <div style={backgroundStyle}>
-         <div className="showcase_container" id="showcase_container">
+    <main>
+         <div className="showcase_container" id="showcase_container" style={backgroundStyle}>
             <div className="showcase">
                 <h3 className="showcase_title">Showcase</h3>
             </div>
@@ -97,7 +98,7 @@ export default function Showcase() {
                     <Image alt="text to image" loading="lazy" src={Ai} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Text to Image Generator</h2>
-                        <div className="showcase-card__tech_stack">
+ https://www.w3schools.com/cssref/css3_pr_object-position.php                       <div className="showcase-card__tech_stack">
                             <p>Tech Used: OpenAi API, TailwindCSS, React.js, JavaScript</p>
                         </div>
                         <div className="showcase-card__details-wrapper" id="details-wrapper">
@@ -124,6 +125,6 @@ export default function Showcase() {
           </div>
        </section>
       </div>
-   </div>
+   </main>
   )
 }

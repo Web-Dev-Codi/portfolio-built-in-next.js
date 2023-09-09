@@ -1,3 +1,5 @@
+const date = new Date().getFullYear();
+
 export default function Footer() {
   return (
     <main>
@@ -9,13 +11,13 @@ export default function Footer() {
                 <div className="copyright_link">
                     <div className="copyright">
                         <p className="copy_para">Copyright &copy;
-                            <script>document.write(new Date().getFullYear())</script> Brian Cordisco All Rights
+                            {date} Brian Cordisco All Rights
                             Reserved
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+   </main>
   )
 }

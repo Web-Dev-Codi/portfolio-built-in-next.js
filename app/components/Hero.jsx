@@ -6,7 +6,8 @@ import HeroImage from "../../public/images/squarehero.jpg"
 
 const imageStyle = {
   height: '100%',
-  width: '100%'
+  width: '100%',
+  clipPath: 'circle(41.1% at 49% 51%)'
 }
 export default function Hero() {
   return (

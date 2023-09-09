@@ -21,11 +21,6 @@ body {
 	/* overflow-x: hidden; */
 }
 
-main {
-	max-width: 100vw;
-	margin: auto;
-}
-
 .wide_nav_container {
 	position: absolute;
 	left: 0;
@@ -168,7 +163,7 @@ main {
 	align-items: center;
 	background-color: black;
 	width: 100%;
-	height: 80vh;
+	height: 1200px;
 }
 
 .hero_wrapper {
@@ -280,7 +275,7 @@ main {
 	align-items: center;
 	width: 75%;
 	padding: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
 }
 
 .tech_stack {
@@ -821,7 +816,6 @@ button:focus {
 }
 
 .footer {
-	position: sticky;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -908,7 +902,7 @@ button:focus {
 	}
 
 	.hero_left {
-		margin-top: 10px;
+		margin-top: 45px;
 		width: 75%;
 		margin-left: auto;
 		margin-right: auto;
