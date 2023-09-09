@@ -5,7 +5,15 @@ import Flixx from "../../public/images/flixx.jpg"
 import Git from "../../public/images/github.jpg"
 import Inquiz from "../../public/images/inquizable.jpg"
 import Weather from "../../public/images/weather.jpg"
-import BG from "../../public/images/graywavewide.png"
+import Js from "../../public/icons/SkillIconsJavascript.svg"
+import ReactSvg from "../../public/icons/SkillIconsReactDark.svg"
+import TailwindCSS from "../../public/icons/SkillIconsTailwindcssLight.svg"
+import Node from "../../public/icons/SkillIconsNodejsDark.svg"
+import ViteSvg from "../../public/icons/SkillIconsViteDark.svg"
+import Gh from "../../public/icons/SkillIconsGithubLight.svg"
+import Css from "../../public/icons/SkillIconsCss.svg"
+import Wp from "../../public/icons/SkillIconsWebpackLight.svg"
+import Html from "../../public/icons/SkillIconsHtml.svg"
 
 
 const showcaseStyle = {
@@ -20,7 +28,6 @@ const showcaseStyle = {
 }
 
 const backgroundStyle = {
-  backgroundImage: 'url("../../public/images/wave1440.svg")',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
 }
@@ -37,14 +44,19 @@ export default function Showcase() {
                     <Image alt="Inquizable" loading="lazy" src={Inquiz} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Inquizable</h2>
-                        <div className="showcase-card__tech_stack">Tech Used: JavaScript, React, TailwindCSS, Node.js</div>
+                        <div className="showcase-card__tech_stack">
+                         <Image alt="JavaScript icon" width={25} height={25} style={{color:"transparent"}} src={Js}/>
+                         <Image alt="React icon" width={25} height={25} style={{color:"transparent"}} src={ReactSvg}/>
+                         <Image alt="TailwindCSS icon" width={25} height={25} style={{color:"transparent"}} src={TailwindCSS}/>
+                         <Image alt="Node.js icon" width={25} height={25} style={{color:"transparent"}} src={Node}/>
+                         </div>
                         <div className="showcase-card__details-wrapper" id="details-wrapper">
                             <p className="showcase-card__excerpt">Test your general knowledge with this quiz app. User
                                 log-in,
                                 registration and profile
                                 page.</p>
-                            <a href="https://www.inquizable.com/" className="showcase-card__visit">Visit Site <i
-                                    className="fas fa-long-arrow-alt-right"></i></a>
+                            <a href="https://www.inquizable.com/" className="showcase-card__visit">Visit Site
+                            <i className="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -52,7 +64,11 @@ export default function Showcase() {
                     <Image alt="github finder" loading="lazy" src={Git} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">GitHub Finder</h2>
-                        <div className="showcase-card__tech_stack">Tech Used: Vite.js, TailwindCSS, JavaScript, Github API
+                        <div className="showcase-card__tech_stack">
+                         <Image alt="Vite icon" width={25} height={25} style={{color:"transparent"}} src={ViteSvg}/>
+                         <Image alt="TailwindCSS icon" width={25} height={25} style={{color:"transparent"}} src={TailwindCSS}/>
+                         <Image alt="JavaScript icon" width={25} height={25} style={{color:"transparent"}} src={Js}/>
+                         <Image alt="Github icon" width={25} height={25} style={{color:"transparent"}} src={Gh}/>
                         </div>
                         <div className="showcase-card__details-wrapper" id="details-wrapper">
                             <p className="showcase-card__excerpt">Search Githubs database for users, and diplay repos,
@@ -67,7 +83,11 @@ export default function Showcase() {
                     <Image alt="Global Weather" loading="lazy" src={Weather} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Global Weather App</h2>
-                        <div className="showcase-card__tech_stack">Tech Used: React, JavaScript, TailwindCSS</div>
+                        <div className="showcase-card__tech_stack">
+                         <Image alt="JavaScript icon" width={25} height={25} style={{color:"transparent"}} src={Js}/>
+                         <Image alt="React icon" width={25} height={25} style={{color:"transparent"}} src={ReactSvg}/>
+                         <Image alt="TailwindCSS icon" width={25} height={25} style={{color:"transparent"}} src={TailwindCSS}/>
+                        </div>
                         <div className="showcase-card__details-wrapper" id="details-wrapper">
                             <p className="showcase-card__excerpt">Weather App for local and global weather. Input location
                                 to
@@ -82,7 +102,11 @@ export default function Showcase() {
                     <Image alt="Diet-Tracker" loading="lazy" src={Diet} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Diet-Tracker</h2>
-                        <div className="showcase-card__tech_stack">Tech Used: JavaScript, HTML, CSS</div>
+                        <div className="showcase-card__tech_stack">
+                         <Image alt="html icon" width={25} height={25} style={{color:"transparent"}} src={Html}/>
+                         <Image alt="JavaScript icon" width={25} height={25} style={{color:"transparent"}} src={Js}/>
+                         <Image alt="CSS3 icon" width={25} height={25} style={{color:"transparent"}} src={Css}/>
+                        </div>
                         <div className="showcase-card__details-wrapper" id="details-wrapper">
                             <p className="showcase-card__excerpt">Track calories burnt from exercise and dieting. Meals and
                                 workouts
@@ -98,8 +122,10 @@ export default function Showcase() {
                     <Image alt="text to image" loading="lazy" src={Ai} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Text to Image Generator</h2>
- https://www.w3schools.com/cssref/css3_pr_object-position.php                       <div className="showcase-card__tech_stack">
-                            <p>Tech Used: OpenAi API, TailwindCSS, React.js, JavaScript</p>
+                         <div className="showcase-card__tech_stack">
+                         <Image alt="React icon" width={25} height={25} style={{color:"transparent"}} src={ReactSvg}/>
+                         <Image alt="TailwindCSS icon" width={25} height={25} style={{color:"transparent"}} src={TailwindCSS}/>
+                         <Image alt="JavaScript icon" width={25} height={25} style={{color:"transparent"}} src={Js}/>
                         </div>
                         <div className="showcase-card__details-wrapper" id="details-wrapper">
                             <p className="showcase-card__excerpt">Generate a custom image from text within seconds using AI.
@@ -113,7 +139,12 @@ export default function Showcase() {
                     <Image alt="Flixx Movie Database" loading="lazy" src={Flixx} decoding="sync" className="showcase-card__image" style={showcaseStyle}/>
                     <div className="showcase-card__text-wrapper" id="text-wrapper">
                         <h2 className="showcase-card__title">Flixx Movie Database</h2>
-                        <div className="showcase-card__tech_stack">Tech Used: JavaScript, HTML, CSS, Webpack</div>
+                        <div className="showcase-card__tech_stack">
+                         <Image alt="HTML" width={25} height={25} style={{color:"transparent"}} src={Html}/>
+                         <Image alt="CSS3 icon" width={25} height={25} style={{color:"transparent"}} src={Css}/>
+                         <Image alt="JavaScript icon" width={25} height={25} style={{color:"transparent"}} src={Js}/>
+                         <Image alt="Webpack icon" width={25} height={25} style={{color:"transparent"}} src={Wp}/>
+                        </div>
                         <div className="showcase-card__details-wrapper" id="details-wrapper">
                             <p className="showcase-card__excerpt">Search a movie database for new releases, ratings and
                                 possible

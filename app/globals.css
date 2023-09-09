@@ -598,6 +598,8 @@ h3 {
 }
 
 .showcase-card__tech_stack {
+  display: flex;
+  gap: 10px;
 	font-size: 14px;
 }
 
@@ -670,20 +672,6 @@ h3 {
 	user-select: none;
 }
 
-.modal-content {
-	/* display: none; */
-	padding-bottom: 15px
-}
-
-
-.active {
-	display: block;
-}
-
-.form-modal {
-
-}
-
 .success-modal {
 	display: grid;
 	place-content: center;
@@ -717,53 +705,6 @@ h3 {
 	width: 100%;
 }
 
-.checkbox_container input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
-}
-
-.checkmark {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 20px;
-	width: 20px;
-	background-color: #eee;
-}
-
-.checkbox_container:hover input ~ .checkmark {
-	background-color: #ccc;
-}
-
-.checkbox_container input:checked ~ .checkmark {
-	background-color: #2196f3;
-}
-
-.checkmark:after {
-	content: "";
-	position: absolute;
-	display: none;
-}
-
-.checkbox_container input:checked ~ .checkmark:after {
-	display: block;
-}
-
-.checkbox_container .checkmark:after {
-	left: 6px;
-	top: 2px;
-	width: 5px;
-	height: 10px;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
 form div {
 	margin-top: 1rem;
 }
@@ -794,6 +735,12 @@ input,
 textarea {
 	padding: 0.4rem;
 	width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #2196f3;
+  border-radius: 5px;
 }
 
 button {
