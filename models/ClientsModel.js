@@ -1,25 +1,27 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-// Client DB Schema 
+// Client DB Schema
 const clientSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: [true, 'Please add a text field']
-    },
-    email: {
-        type: String,
-        required: true
-    },
-    message: {
-        type: String,
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now
-    },
+  name: {
+    type: String,
+    required: [true, "Please provide your name"],
+    unique: true,
+  },
+  email: {
+    type: String,
+    required: [true, "Please provide your email"],
+    unique: true,
+  },
+  message: {
+    type: String,
+    required: [true, "Please provide a message"],
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
-const Client = mongoose.model('Client', clientSchema);
-
+const Client = mongoose.model.client || mongoose.model("Client", clientSchema);
 
 export default Client;

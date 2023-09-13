@@ -14,6 +14,7 @@ import Gh from "../../public/icons/SkillIconsGithubLight.svg"
 import Css from "../../public/icons/SkillIconsCss.svg"
 import Wp from "../../public/icons/SkillIconsWebpackLight.svg"
 import Html from "../../public/icons/SkillIconsHtml.svg"
+import wave from '../../public/images/wave1440.svg'
 
 
 const showcaseStyle = {
@@ -35,7 +36,7 @@ const backgroundStyle = {
 export default function Showcase() {
   return (
     <main>
-         <div className="showcase_container" id="showcase_container" style={backgroundStyle}>
+         <div className="showcase_container" id="showcase_container" style={{backgroundImage: `url(${wave.src})`}}>
             <div className="showcase">
                 <h3 className="showcase_title">Showcase</h3>
             </div>

@@ -52,7 +52,7 @@ export default function Hero() {
                 </div>
                 <div className="hero_right">
                     <div className="hero_image">
-                        <Image alt="hero image" loading="lazy" style={imageStyle} src={HeroImage} decoding="sync" />
+                        <Image alt="hero image" style={imageStyle} src={HeroImage} decoding="sync" priority/>
                     </div>
                 </div>
            </div>
