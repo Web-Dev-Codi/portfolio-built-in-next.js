@@ -1,6 +1,7 @@
+"client"
 export default function About() {
   return (
-        <main>
+        <div>
             <div className="about_me_wrapper">
                 <div className="about_me_container">
                     <div className="about_me_right">
@@ -19,6 +20,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
   )
 }

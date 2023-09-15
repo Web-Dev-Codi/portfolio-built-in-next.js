@@ -1,8 +1,9 @@
+"use client"
 import Image from "next/image"
-import Twitter from "../../public/images/twitter-256.svg"
-import Github from "../../public/images/github-256.svg"
-import Linkedin from "../../public/images/linkedin-256.svg"
-import HeroImage from "../../public/images/squarehero.jpg"
+import Twitter from "../public/images/twitter-256.svg"
+import Github from "../public/images/github-256.svg"
+import Linkedin from "../public/images/linkedin-256.svg"
+import HeroImage from "../public/images/squarehero.jpg"
 
 const imageStyle = {
   height: '100%',
@@ -11,7 +12,6 @@ const imageStyle = {
 }
 export default function Hero() {
   return (
-    <main>
         <div className="hero_container">
             <div className="hero_wrapper">
                  <div className="hero_left">
@@ -57,6 +57,5 @@ export default function Hero() {
                 </div>
            </div>
         </div>
-    </main>
   )
 }

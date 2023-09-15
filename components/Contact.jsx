@@ -1,4 +1,3 @@
-
 "use client"
 import Link from "next/link";
 import { useState } from "react";
@@ -6,39 +5,56 @@ import { useRouter } from "next/navigation";
 
 
 export default function Contact() {
-  const router = useRouter();
-  const [data, setData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
-  async function onCreate(e){
+  async function handleSubmit(e){
     e.preventDefault();
-    try {
-      setData();
-      console.log("Success");
-      router.push("/success");
-    } catch (error) {
-      console.log("Error", error);
+    console.log("Name: ", name)
+    console.log("Email: ", email)
+    console.log("Message: ", message)
+
+     const res = await fetch("api/success", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+      }),
+    });
+
+    const { msg, success } = await res.json();
+    setError(msg);
+    setSuccess(success);
+
+    if (success) {
+      setName("");
+      setEmail("");
+      setMessage("");
     }
+
   };
 
+
   return (
-    <div>
         <div className="form_wrapper" id="contact">
             <h3 className="contact">Contact</h3>
-            <form id="form">
+            <form onSubmit={handleSubmit} id="form">
                 <div>
                     <label htmlFor="name">Name</label>
              <input
                 type="text"
                 name="name"
                 id="name"
-                minLength="3"
-                maxLength="30"
                 placeholder="Name"
-                onChange={(e) => setData({...data, name: e.target.value})}
+                onChange={(e) => setName(e.target.value)}
+                value={name}
                 autoComplete="true"
                 required
                 />
@@ -46,11 +62,12 @@ export default function Contact() {
                 <div>
                     <label htmlFor="email">Email address </label>
              <input
-                type="email"
                 name="email"
                 id="email"
                 placeholder="Email"
-                onChange={(e) => setData({...data, email: e.target.value})}
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                type="email"
                 autoComplete="true"
                 required
                 />
@@ -63,13 +80,14 @@ export default function Contact() {
                 cols="30"
                 rows="5"
                 placeholder="Leave a message for a quick response."
-                onChange={(e) => setData({...data, message: e.target.value})}
+                onChange={(e) => setMessage(e.target.value)}
+                value={message}
                 required >
               </textarea>
                 </div>
-                <button onClick={onCreate} type="submit" value="Submit">Send</button>
+                <button type="submit">Send</button>
             </form>
         </div>
-    </div>
+
   )
 }

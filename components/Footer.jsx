@@ -1,9 +1,9 @@
+"use client"
 const date = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <main>
-      <div className="footer">
+    <div className="footer">
             <div className="footer_items">
                 <div className="contact_link">
                     <a href="#contact">Contact</a>
@@ -18,6 +18,5 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-   </main>
   )
 }
