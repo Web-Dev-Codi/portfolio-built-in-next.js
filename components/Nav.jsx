@@ -1,4 +1,3 @@
-"use client"
 import Link from "next/link"
 
 export default function Nav() {
@@ -11,7 +10,7 @@ export default function Nav() {
               </div>
               <div className="nav_right">
                 <div className="nav_buttons">
-                    <a href="../../public/images/resume.pdf" className="about_button" target="_blank" rel="noopener norefferrer" download>
+                    <a href="../public/resume.pdf" className="about_button" download>
                        Resume
                     </a>
                 </div>

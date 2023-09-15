@@ -1,4 +1,3 @@
-"use client"
 import Image from "next/image"
 import Html from "../public/images/html.svg"
 import Css from "../public/images/css3.svg"

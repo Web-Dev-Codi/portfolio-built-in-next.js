@@ -1,4 +1,3 @@
-"use client"
 import Image from "next/image"
 import Ai from "../public/images/ai.jpg"
 import Diet from "../public/images/diettracker.jpg"
@@ -16,7 +15,7 @@ import Css from "../public/icons/SkillIconsCss.svg"
 import Wp from "../public/icons/SkillIconsWebpackLight.svg"
 import Html from "../public/icons/SkillIconsHtml.svg"
 import wave from '../public/images/wave1440.svg'
-
+import {FaLongArrowAltRight} from "react-icons/fa"
 
 const showcaseStyle = {
   maxInlineSize: '100%',
@@ -57,7 +56,7 @@ export default function Showcase() {
                                 registration and profile
                                 page.</p>
                             <a href="https://www.inquizable.com/" className="showcase-card__visit">Visit Site
-                            <i className="fas fa-long-arrow-alt-right"></i></a>
+                            <i className="fas fa-long-arrow-alt-right"><FaLongArrowAltRight/></i></a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +75,7 @@ export default function Showcase() {
                                 stars, and
                                 achievements</p>
                             <a href="https://git-hub-finder-vite.vercel.app/" className="showcase-card__visit">Visit
-                                Site <i className="fas fa-long-arrow-alt-right"></i></a>
+                                Site <i className="fas fa-long-arrow-alt-right"><FaLongArrowAltRight/></i></a>
                         </div>
                     </div>
                 </div>
@@ -95,7 +94,7 @@ export default function Showcase() {
                                 display
                                 your local weather</p>
                             <a href="https://weathertest-app.vercel.app" className="showcase-card__visit">Visit Site <i
-                                    className="fas fa-long-arrow-alt-right"></i></a>
+                                    className="fas fa-long-arrow-alt-right"><FaLongArrowAltRight/></i></a>
                         </div>
                     </div>
                 </div>
@@ -115,7 +114,7 @@ export default function Showcase() {
                                 calculated from
                                 daily expenditure.</p>
                             <a href="https://dietracker.vercel.app/" className="showcase-card__visit">Visit Site <i
-                                    className="fas fa-long-arrow-alt-right"></i></a>
+                                    className="fas fa-long-arrow-alt-right"><FaLongArrowAltRight/></i></a>
                         </div>
                     </div>
                 </div>
@@ -132,7 +131,7 @@ export default function Showcase() {
                             <p className="showcase-card__excerpt">Generate a custom image from text within seconds using AI.
                             </p>
                             <a href="https://texttoimagegenerator.vercel.app/" className="showcase-card__visit">Visit
-                                Site <i className="fas fa-long-arrow-alt-right"></i></a>
+                                Site <i className="fas fa-long-arrow-alt-right"><FaLongArrowAltRight/></i></a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +150,7 @@ export default function Showcase() {
                                 possible
                                 viewing pleasure</p>
                             <a href="https://flixxmoviesearchengine.vercel.app/" className="showcase-card__visit">Visit
-                                Site <i className="fas fa-long-arrow-alt-right"></i></a>
+                                Site <i className="fas fa-long-arrow-alt-right"><FaLongArrowAltRight/></i></a>
                         </div>
                </div>
           </div>
