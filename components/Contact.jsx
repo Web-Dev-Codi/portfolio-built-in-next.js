@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 
 
 export default function Contact() {
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -38,7 +39,7 @@ export default function Contact() {
       setEmail("");
       setMessage("");
     }
-
+    router.push("/success");
   };
 
 
