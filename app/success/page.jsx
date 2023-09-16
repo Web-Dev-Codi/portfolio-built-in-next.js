@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styles from '../success/success.module.css'
 import wave from '../../public/images/wave1440.svg'
+import {FaLongArrowAltLeft} from "react-icons/fa"
 
 export default function Success() {
   return (
@@ -17,7 +18,7 @@ export default function Success() {
                     <p>Message Sent Successfully. 👍</p>
                   </div>
               </div>
-              <Link href="/" className={styles.success_card_anchor}><i className="fas fa-long-arrow-alt-left"></i>Back to the good stuff</Link>
+              <Link href="/" className={styles.success_card_anchor}><FaLongArrowAltLeft  className={styles.svg} /><p>Back to the good stuff</p></Link>
             </div>
         </section>
     </main>

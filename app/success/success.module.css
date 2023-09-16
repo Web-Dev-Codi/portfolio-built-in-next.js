@@ -12,6 +12,10 @@
 	padding-bottom: 15px;
   }
 
+.svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
 
 .modal {
 	display: grid;
@@ -36,8 +40,13 @@
 }
 
 .success_card_anchor {
-	padding: 8px;
-	text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
 	color: white;
 }
 
@@ -57,8 +66,7 @@
 }
 
 .modal_container p {
-	margin: 0;
-	padding: 10px;
+	margin: 5px;
 	font-size: 25px;
 	color: white;
 }
@@ -86,3 +94,32 @@
 			color: yellow;
 		}
 	}
+
+  @media screen and (max-width: 480px) {
+	.modal {
+		width: 350px;
+		height: fit-content;
+    padding: 10px;
+	}
+
+   .modal_content {
+    padding-bottom: 0px;
+  }
+
+  .modal_container p {
+    font-size: 15px;
+  }
+  .success_card_anchor {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+}
