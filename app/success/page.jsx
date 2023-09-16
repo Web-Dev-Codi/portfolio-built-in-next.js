@@ -1,12 +1,11 @@
 import Link from 'next/link'
 import styles from '../success/success.module.css'
 import wave from '../../public/images/wave1440.svg'
-import {FaLongArrowAltLeft} from "react-icons/fa"
+import {ImArrowLeft} from "react-icons/im"
 
 export default function Success() {
   return (
     <main className={styles.main} style={{backgroundImage: `url(${wave.src})`,
-    backgroundAttachment: 'fixed',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
     }}>
@@ -18,7 +17,7 @@ export default function Success() {
                     <p>Message Sent Successfully. 👍</p>
                   </div>
               </div>
-              <Link href="/" className={styles.success_card_anchor}><FaLongArrowAltLeft  className={styles.svg} /><p>Back to the good stuff</p></Link>
+              <Link href="/" className={styles.success_card_anchor}><ImArrowLeft/><p>Back to the good stuff</p></Link>
             </div>
         </section>
     </main>
