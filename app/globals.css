@@ -763,9 +763,6 @@ button:focus {
 }
 
 .footer {
-	bottom: 0;
-	left: 0;
-	right: 0;
 	border-top: solid;
 	border-image-slice: 1;
 	border-width: 1px;
@@ -1063,17 +1060,22 @@ button:focus {
 	.hero_left h1 {
 		margin: 15px 0px;
 		padding: 0px;
-		font-size: 25px;
+		font-size: 35px;
+    width: 75%;
 	}
 
 	.hero_left p {
-		padding: 5px;
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.hero_text {
-		width: 75%;
+		width: 90%;
 	}
+
+  .form_wrapper {
+    height: fit-content;
+    padding: 20px 15px;
+  }
 
 	.about_me_container {
 		width: 100%;
@@ -1146,4 +1148,43 @@ button:focus {
 		width: 50px;
 		height: 50px;
 	}
+  .barcode_font {
+    font-size: 20px;
+  }
+  .copy_para {
+    font-size: 12px;
+  }
+
+  .social_media_contacts img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .footer a {
+    padding: 2px;
+  }
+
+  .copyright_link {
+    margin: 5px 0px;
+  }
+  .showcase_title,
+  .skills_header,
+  .contact {
+    font-size: 30px;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+
+  label,
+  input,
+  textarea,
+  button {
+    font-size: 0.9rem;
+  }
+
+  .showcase-card__title {
+    font-size: 20px;
+  }
 }
