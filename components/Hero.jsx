@@ -1,8 +1,31 @@
+"use client"
 import Image from "next/image"
 import Twitter from "../public/images/twitter-256.svg"
 import Github from "../public/images/github-256.svg"
 import Linkedin from "../public/images/linkedin-256.svg"
 import HeroImage from "../public/images/squarehero.jpg"
+import { motion as m } from "framer-motion"
+
+const container ={
+  hidden: {opacity: 0, scale: 0.5},
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 3,
+      delay: 0.3,
+      ease: [0, 0.71, 0.2, 1.01],
+    }
+  }
+}
+
+const item = {
+  hidden: {opacity: 0},
+  show: {opacity: 1}
+}
+
+
+
 
 const imageStyle = {
   height: '100%',
@@ -14,21 +37,53 @@ export default function Hero() {
         <div className="hero_container">
             <div className="hero_wrapper">
                  <div className="hero_left">
-                    <h1>
+                    <m.h1
+                      initial={{opacity: 0, scale: 0.5}}
+                      animate={{opacity: 1, scale: 1}}
+                      transition={{
+                      duration: 3,
+                      delay: 1.0,
+                       ease: [0, 0.71, 0.2, 1.01]
+                    }}
+                    >
                         "Crafting the Web, <br></br> One Pixel at a Time"
-                    </h1>
-                    <p className="hero_text">
+                    </m.h1>
+                    <m.p
+                      className="hero_text"
+                      initial={{opacity: 0, scale: 0.5}}
+                      animate={{opacity: 1, scale: 1}}
+                      transition={{
+                      duration: 3,
+                      delay: 1.4,
+                      ease: [0, 0.71, 0.2, 1.01]
+                    }}>
                         "Bringing your vision to life with passion and precision! Let's collaborate to create dynamic, innovative web solutions that are as unique as they are impressive."
-                    </p>
-                    <div className="hero_neon_btns">
+                    </m.p>
+                    <m.div
+                      className="hero_neon_btns"
+                      initial={{opacity: 0, scale: 0.5}}
+                      animate={{opacity: 1, scale: 1}}
+                      transition={{
+                      duration: 3,
+                      delay: 1.6,
+                      ease: [0, 0.71, 0.2, 1.01]
+                    }}>
                         <a href="#contact" className="contact_button">
                             Contact
                         </a>
                         <a href="#showcase" className="neon_button">
                             Showcase
                         </a>
-                    </div>
-                    <div className="hero_socials">
+                    </m.div>
+                    <m.div
+                      className="hero_socials"
+                      initial={{opacity: 0, scale: 0.5}}
+                      animate={{opacity: 1, scale: 1}}
+                      transition={{
+                      duration: 3,
+                      delay: 1.8,
+                      ease: [0, 0.71, 0.2, 1.01]
+                    }}>
                         <a href="https://twitter.com/WebDevCodi">
                             <div className="hero_social">
                                 <Image src={Twitter} alt="twitter" width={35} height={35}/>
@@ -47,13 +102,21 @@ export default function Hero() {
                                 <p>Linkedin</p>
                             </div>
                         </a>
-                    </div>
+                    </m.div>
                 </div>
-                <div className="hero_right">
+                <m.div
+                      className="hero_right"
+                      initial={{opacity: 0, scale: 0.5}}
+                      animate={{opacity: 1, scale: 1}}
+                      transition={{
+                      duration: 5,
+                      delay: 2,
+                      ease: [0, 0.71, 0.2, 1.01]
+                    }}>
                     <div className="hero_image">
                         <Image alt="hero image" style={imageStyle} src={HeroImage} decoding="sync" priority/>
                     </div>
-                </div>
+                </m.div>
            </div>
         </div>
   )

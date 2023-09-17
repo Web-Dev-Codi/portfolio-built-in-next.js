@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Libre+Barcode+39&family=Monofett&family=Monoton&family=Permanent+Marker&family=Press+Start+2P&family=Rubik+Vinyl&family=Tourney:ital,wght@0,400;1,100;1,400;1,700&display=swap");
 
+/*@font-face {
+  font-family:'';
+  src: url('') format('woff2'),
+        url('') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}*/
+
 :root {
 	--clr-neon: hsl(317, 100%, 54%);
 	--clr-bg: hsl(323, 21%, 16%);
@@ -18,11 +26,10 @@ body {
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 100%;
-	/* overflow-x: hidden; */
 }
 
 .wide_nav_container {
-	position: absolute;
+	position: sticky;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -163,7 +170,7 @@ body {
 	align-items: center;
 	background-color: black;
 	width: 100%;
-	height: 1200px;
+	height: 800px;
 }
 
 .hero_wrapper {
@@ -196,11 +203,12 @@ body {
 
 .hero_left p {
 	font-family: "IBM Plex Mono", monospace;
-	font-size: 20px;
+	font-size: 24px;
 	color: #cefaf893;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 15px 10px;
+  line-height: 1.3;
 	font-weight: 400;
 	text-align: center;
 }
@@ -244,7 +252,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 5px;
-	/* gap: 10px; */
 	cursor: pointer;
 }
 
@@ -258,7 +265,6 @@ body {
 	justify-content: center;
 	gap: 50px;
 	margin: 5px;
-	/* padding: 15px 30px */
 }
 
 .about_me_wrapper {
@@ -289,7 +295,6 @@ body {
 
 .about_me_right {
 	width: 700px;
-	/* padding: 1rem; */
 }
 
 h5 {
@@ -300,13 +305,13 @@ h5 {
 .about_me_right h3 {
 	text-align: center;
 	font-size: 50px;
-	/* padding: 15px; */
 	color: white;
 	margin: 0;
 }
 
 .about_me_right p {
-	font-size: 20px;
+  line-height: 1.4;
+	font-size: 22px;
 	text-align: center;
 	color: #cefaf893;
 	padding: 15px;
@@ -461,7 +466,6 @@ h5 {
 	width: 100%;
 	height: 100%;
 	padding-bottom: 70px;
-	/* margin-bottom: 70px; */
 }
 
 h3 {
@@ -876,7 +880,6 @@ button:focus {
 	}
 
 	.hero_right {
-		/* height: 300px; */
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -978,13 +981,16 @@ button:focus {
 }
 
 @media screen and (max-width: 720px) {
-	/*.wide_nav_container,
+	.wide_nav_container {
+
+   }
+
 	.nav_background {
-		position: fixed;
-	}*/
+
+  }
 
 	.hero_container {
-		padding-top: 100px;
+		padding-top: 50px;
 	}
 
 	.contact_button,
@@ -1019,7 +1025,6 @@ button:focus {
 	}
 
 	.hero_right {
-		/* height: 300px; */
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -1071,6 +1076,10 @@ button:focus {
 	.hero_left p {
 		font-size: 14px;
 	}
+
+  .hero_right {
+    padding-bottom: 20px;
+  }
 
 	.hero_text {
 		width: 90%;
