@@ -17,7 +17,7 @@ export default function About() {
 					<div className="about_me_right">
 						<h3>About Me</h3>
 						<p>
-							I'm Brian Cordisco, a certified Front-end Web
+							I'm Brian Cordisco, a certified Full-Stack Web
 							Developer with a passion for computers, web
 							development, and video games. I utilize HTML, CSS,
 							JavaScript, and frameworks like React. My
