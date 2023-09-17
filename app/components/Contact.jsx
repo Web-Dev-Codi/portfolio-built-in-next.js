@@ -50,7 +50,10 @@ export default function Contact() {
 				onSubmit={handleSubmit}
 				id="form">
 				<div>
-					<label htmlFor="name">Name</label>
+					<label
+						htmlFor="name">
+						Name
+					</label>
 					<input
 						type="text"
 						name="name"

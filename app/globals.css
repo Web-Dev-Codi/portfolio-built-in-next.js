@@ -751,12 +751,13 @@ textarea:focus {
 }
 
 button {
+	border-radius: 15px;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	background: #3740ff;
 	color: #fff;
 	border: none;
-	padding: 0.6rem;
+	padding: 1rem;
 }
 
 button:hover,
@@ -768,6 +769,11 @@ button:focus {
 	display: block;
 	padding-top: 0.4em;
 	color: red;
+}
+
+.success {
+	color: green;
+	font-size: 14px;
 }
 
 .footer {
