@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Linkedin from "../public/icons/DeviconLinkedin.svg"
-import Twitter from "../public/icons/DeviconTwitter.svg"
-import Git from "../public/icons/LogosGithubIcon.svg"
+import Linkedin from "../../public/icons/DeviconLinkedin.svg"
+import Twitter from "../../public/icons/DeviconTwitter.svg"
+import Git from "../../public/icons/LogosGithubIcon.svg"
 
 const date = new Date().getFullYear();
 

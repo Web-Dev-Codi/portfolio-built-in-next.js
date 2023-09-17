@@ -1,11 +1,11 @@
 import Image from "next/image"
-import Html from "../public/images/html.svg"
-import Css from "../public/images/css3.svg"
-import Js from "../public/images/javascript.svg"
-import Ts from "../public/images/typescript.svg"
-import Git from "../public/images/git.svg"
-import Node from "../public/images/node.svg"
-import React from "../public/images/reactjs.svg"
+import Html from "../../public/images/html.svg"
+import Css from "../../public/images/css3.svg"
+import Js from "../../public/images/javascript.svg"
+import Ts from "../../public/images/typescript.svg"
+import Git from "../../public/images/git.svg"
+import Node from "../../public/images/node.svg"
+import React from "../../public/images/reactjs.svg"
 
 export default function Skills() {
   return (
