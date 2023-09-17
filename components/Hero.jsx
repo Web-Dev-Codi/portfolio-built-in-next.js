@@ -14,6 +14,7 @@ const imageStyle = {
 export default function Hero() {
 	return (
 		<div className="hero_container">
+			~
 			<div className="hero_wrapper">
 				<div className="hero_left">
 					<m.h1
@@ -21,7 +22,7 @@ export default function Hero() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{
 							duration: 3,
-							delay: 1.0,
+							delay: 0.7,
 							ease: [0, 0.71, 0.2, 1.01],
 						}}>
 						"Crafting the Web, <br></br> One Pixel at a Time"
@@ -32,7 +33,7 @@ export default function Hero() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{
 							duration: 3,
-							delay: 1.4,
+							delay: 1.1,
 							ease: [0, 0.71, 0.2, 1.01],
 						}}>
 						"Bringing your vision to life with passion and
