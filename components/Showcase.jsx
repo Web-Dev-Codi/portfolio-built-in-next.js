@@ -188,35 +188,43 @@ export default function Showcase() {
 						<h2 className="showcase-card__title">
 							Global Weather App
 						</h2>
-						3000
-						<Image
-							alt="React icon"
-							width={25}
-							height={25}
-							style={{ color: "transparent" }}
-							src={ReactSvg}
-						/>
-						<Image
-							alt="TailwindCSS icon"
-							width={25}
-							height={25}
-							style={{ color: "transparent" }}
-							src={TailwindCSS}
-						/>
-					</div>
-					<div
-						className="showcase-card__details-wrapper"
-						id="details-wrapper">
-						<p className="showcase-card__excerpt">
-							Weather App for local and global weather. Input
-							location to display your local weather
-						</p>
-						<a
-							href="https://weathertest-app.vercel.app"
-							className="showcase-card__visit">
-							<p>Visit Site</p>
-							<ImArrowRight />
-						</a>
+						<div className="showcase-card__tech_stack">
+							<Image
+								alt="React icon"
+								width={25}
+								height={25}
+								style={{ color: "transparent" }}
+								src={ReactSvg}
+							/>
+							<Image
+								alt="JavaScript icon"
+								width={25}
+								height={25}
+								style={{ color: "transparent" }}
+								src={Js}
+							/>
+							<Image
+								alt="TailwindCSS icon"
+								width={25}
+								height={25}
+								style={{ color: "transparent" }}
+								src={TailwindCSS}
+							/>
+							<div
+								className="showcase-card__details-wrapper"
+								id="details-wrapper">
+								<p className="showcase-card__excerpt">
+									Weather App for local and global weather.
+									Input location to display your local weather
+								</p>
+								<a
+									href="https://weathertest-app.vercel.app"
+									className="showcase-card__visit">
+									<p>Visit Site</p>
+									<ImArrowRight />
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div
