@@ -535,12 +535,14 @@ h3 {
 }
 
 .skill_list {
-	max-width: 600px;
+	width: 65%;
+	margin: auto;
+	padding:15px 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 50px;
+	gap: 40px 50px;
 }
 
 .skills_header {
@@ -1150,7 +1152,8 @@ button:focus {
 	}
 
 	.skill_list {
-		gap: 35px;
+		width: 75%;
+		gap: 25px 35px;
 	}
 
 	.skill_list img {
