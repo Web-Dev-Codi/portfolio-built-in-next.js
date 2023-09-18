@@ -1,5 +1,4 @@
 "use client";
-import "./globals.css";
 import Loading from "./loading";
 import Image from "next/image";
 import Nav from "./components/Nav";

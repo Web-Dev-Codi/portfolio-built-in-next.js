@@ -23,7 +23,7 @@ export default function About() {
 							JavaScript, and frameworks like React. My
 							problem-solving skills, creativity, and excellent
 							communication make me an asset to any team. When I'm
-							not coding, you'll find me exploring virtual worlds
+							not coding, you'll find me exploring new technologies
 							and drawing inspiration for my projects. Let's
 							collaborate and create something amazing together!
 						</p>

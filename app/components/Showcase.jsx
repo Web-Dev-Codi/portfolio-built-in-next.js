@@ -171,9 +171,7 @@ export default function Showcase() {
 						</div>
 					</div>
 				</div>
-				<div
-					className="showcase-card"
-					id="showcase-card">
+				<div className="showcase-card" id="showcase-card">
 					<Image
 						alt="Global Weather"
 						loading="lazy"
@@ -182,12 +180,8 @@ export default function Showcase() {
 						className="showcase-card__image"
 						style={showcaseStyle}
 					/>
-					<div
-						className="showcase-card__text-wrapper"
-						id="text-wrapper">
-						<h2 className="showcase-card__title">
-							Global Weather App
-						</h2>
+					<div className="showcase-card__text-wrapper" id="text-wrapper">
+						<h2 className="showcase-card__title">Global Weather App</h2>
 						<div className="showcase-card__tech_stack">
 							<Image
 								alt="React icon"
@@ -210,20 +204,16 @@ export default function Showcase() {
 								style={{ color: "transparent" }}
 								src={TailwindCSS}
 							/>
-							<div
-								className="showcase-card__details-wrapper"
-								id="details-wrapper">
-								<p className="showcase-card__excerpt">
+						</div>
+						<div className="showcase-card__details-wrapper" id="details-wrapper">
+							<p className="showcase-card__excerpt">
 									Weather App for local and global weather.
 									Input location to display your local weather
-								</p>
-								<a
-									href="https://weathertest-app.vercel.app"
-									className="showcase-card__visit">
-									<p>Visit Site</p>
-									<ImArrowRight />
-								</a>
-							</div>
+							</p>
+							<a href="https://weathertest-app.vercel.app" className="showcase-card__visit">
+								<p>Visit Site</p>
+								<ImArrowRight />
+							</a>
 						</div>
 					</div>
 				</div>
