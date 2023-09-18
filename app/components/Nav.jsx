@@ -1,6 +1,15 @@
 import Link from "next/link";
+import path from "path";
 
-export default function Nav() {
+const handler = async (req, res) => {
+	const file = path.resolve("/files/BrianCV-minimal.pdf");
+	const data = file.toString("base64");
+	return data;
+};
+
+const Nav = async () => {
+	const data = await handler();
+
 	return (
 		<div>
 			<div className="nav_background"></div>
@@ -15,10 +24,10 @@ export default function Nav() {
 				<div className="nav_right">
 					<div className="nav_buttons">
 						<Link
-							href="/app/files/BrianCV-minimal.pdf"
+							href={data}
 							target="_blank"
-							locale="false"
 							rel="noopener noreferrer"
+							locale="false"
 							className="about_button"
 							download>
 							Resume
@@ -28,4 +37,6 @@ export default function Nav() {
 			</nav>
 		</div>
 	);
-}
+};
+
+export default Nav;
