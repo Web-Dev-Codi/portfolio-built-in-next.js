@@ -16,7 +16,7 @@ const Nav = async () => {
 			<m.div
 				initial={{ y: -65 }}
 				animate={{ y: 0 }}
-				transition={{ duration: 3, type: "spring" }}
+				transition={{ duration: 2, type: "spring" }}
 			    		
 			>
 				<div className="nav_background"></div>
@@ -35,7 +35,7 @@ const Nav = async () => {
 								target="_blank"
 								rel="noopener noreferrer"
 								locale="false"
-								className="about_button"
+								className="resume_button"
 								download>
 								Resume
 							</Link>

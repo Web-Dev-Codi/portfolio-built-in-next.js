@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Twitter from "../../public/images/twitter-256.svg";
 import Github from "../../public/images/github-256.svg";
@@ -49,16 +48,22 @@ export default function Hero() {
 							delay: 1.6,
 							ease: [0, 0.71, 0.2, 1.01],
 						}}>
-						<a
+						<m.a
 							href="#contact"
-							className="contact_button">
+							className="contact_button"
+							whileHover={{
+								scale: 1.1,
+							}}>
 							Contact
-						</a>
-						<a
+						</m.a>
+						<m.a
 							href="#showcase"
-							className="neon_button">
+							className="neon_button"
+							whileHover={{
+								scale: 1.1,
+							}}>
 							Showcase
-						</a>
+						</m.a>
 					</m.div>
 					<m.div
 						className="hero_socials"

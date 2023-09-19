@@ -22,26 +22,21 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-	background-repeat: no-repeat;
-	background-size: contain;
+	background-color: black;
 	height: 100%;
 }
 
 .nav_bg {
-	background-color: black;
-	position: sticky;
+	position: relative;
 	left: 0;
 	top: 0;
 	right: 0;
-	height: 70px;
+	height: 60px;
+	z-index: 9;
 }
 
 .wide_nav_container {
-	position: sticky;
-	left: 0;
-	right: 0;
-	top: 0;
+	position: relative;
 	background-color: #1d212e;
 	padding: 20px;
 	margin: auto;
@@ -50,7 +45,7 @@ body {
 	align-items: center;
 	max-width: 1440px;
 	height: 58px;
-	z-index: 9;
+	z-index: 10;
 }
 
 .nav_background {
@@ -130,7 +125,7 @@ body {
 		0 0 0.5em 0 var(--clr-neon-blue);
 }
 
-.about_button {
+.resume_button {
 	font-family: monospace;
 	display: inline-block;
 	align-self: center;
@@ -164,15 +159,15 @@ body {
 	font-size: 30px;
 }
 
-.about_button:hover,
-.about_button:focus {
+.resume_button:hover,
+.resume_button:focus {
 	background-color: var(--clr-neon);
 	color: hsl(323 21% 16%);
 	text-shadow: none;
 }
 
 .hero_container {
-	position: relative;
+	/* position: relative; */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -1155,7 +1150,7 @@ button:focus {
 		width: 120px;
 	}
 
-	.about_button,
+	.resume_button,
 	.home_button {
 		padding: 5px 6px;
 		font-size: 12px;
@@ -1163,7 +1158,7 @@ button:focus {
 	}
 
 	.nav_left a {
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	.nav_left {

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { motion as m } from "framer-motion";
 
 export default function Contact() {
 	const router = useRouter();
@@ -50,10 +51,7 @@ export default function Contact() {
 				onSubmit={handleSubmit}
 				id="form">
 				<div>
-					<label
-						htmlFor="name">
-						Name
-					</label>
+					<label htmlFor="name">Name</label>
 					<input
 						type="text"
 						name="name"
@@ -90,7 +88,14 @@ export default function Contact() {
 						value={message}
 						required></textarea>
 				</div>
-				<button className="submit_button" type="submit">Send</button>
+				<m.button
+					whileHover={{
+						scale: 1.1,
+					}}
+					className="submit_button"
+					type="submit">
+					Send
+				</m.button>
 			</form>
 		</div>
 	);
