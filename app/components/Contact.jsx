@@ -90,7 +90,7 @@ export default function Contact() {
 						value={message}
 						required></textarea>
 				</div>
-				<button type="submit">Send</button>
+				<button className="submit_button" type="submit">Send</button>
 			</form>
 		</div>
 	);
