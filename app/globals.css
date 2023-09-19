@@ -537,7 +537,7 @@ h3 {
 .skill_list {
 	width: 65%;
 	margin: auto;
-	padding:15px 10px;
+	padding: 15px 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1028,14 +1028,6 @@ button:focus {
 		margin-right: auto;
 	}
 
-	.hero_right .hero_image {
-		object-fit: fill;
-		max-inline-size: 100%;
-		block-size: auto;
-		height: max-content;
-		position: relative;
-	}
-
 	.skills_header {
 		font-size: 35px;
 	}
@@ -1076,8 +1068,9 @@ button:focus {
 		font-size: 14px;
 	}
 
-	.hero_right {
-		padding-bottom: 20px;
+	.hero_image {
+		height: 100%;
+		clip-path: circle(40.1% at 50% 52%);
 	}
 
 	.hero_text {
