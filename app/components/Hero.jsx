@@ -53,7 +53,8 @@ export default function Hero() {
 							className="contact_button"
 							whileHover={{
 								scale: 1.1,
-							}}>
+							}}
+							transition={{ type: "spring", stiffness: 300 }}>
 							Contact
 						</m.a>
 						<m.a
@@ -61,7 +62,8 @@ export default function Hero() {
 							className="neon_button"
 							whileHover={{
 								scale: 1.1,
-							}}>
+							}}
+							transition={{ type: "spring", stiffness: 300 }}>
 							Showcase
 						</m.a>
 					</m.div>

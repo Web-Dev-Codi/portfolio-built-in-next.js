@@ -36,7 +36,7 @@ body {
 }
 
 .wide_nav_container {
-	position: relative;
+	position: sticky;
 	background-color: #1d212e;
 	padding: 20px;
 	margin: auto;
