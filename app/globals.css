@@ -771,8 +771,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-	outline: 2px solid var(--clr-neon);
-	padding: 0.2rem;;
+	outline: 2px solid var(--clr-neon-blue);
+	padding: 0.4rem;
 	border-radius: 5px;
 	box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
 	
@@ -1216,6 +1216,12 @@ button:focus {
 	textarea,
 	button {
 		font-size: 0.9rem;
+	}
+
+	.submit_button {
+		font-size: 14px;
+		padding: 7px 15px;
+		width: 75px;
 	}
 
 	.showcase-card__visit {
