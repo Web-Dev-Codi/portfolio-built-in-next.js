@@ -1,24 +1,12 @@
 import Link from "next/link";
-import path from "path";
-import { motion as m } from "framer-motion";
+import { ResumeButton } from "./ResumeButton";
 
-const handler = async (req, res) => {
-	const file = path.resolve("/files/BrianCordisco-CV-Web-Developer.pdf");
-	const data = file.toString("base64");
-	return data;
-};
+import React from 'react'
 
-const Nav = async () => {
-	const data = await handler();
-
-	return (
-		<div className="nav_bg">
-			<m.div
-				initial={{ y: -65 }}
-				animate={{ y: 0 }}
-				transition={{ duration: 2, type: "spring" }}
-			    		
-			>
+export default function Nav() {
+  return (
+	<div className="nav_bg">
+			<div>
 				<div className="nav_background"></div>
 				<nav className="wide_nav_container">
 					<div className="nav_left">
@@ -29,22 +17,10 @@ const Nav = async () => {
 						</a>
 					</div>
 					<div className="nav_right">
-						<div className="nav_buttons">
-							<Link
-								href={data}
-								target="_blank"
-								rel="noopener noreferrer"
-								locale="false"
-								className="resume_button"
-								download>
-								Resume
-							</Link>
-						</div>
+						<ResumeButton />
 					</div>
 				</nav>
-			</m.div>
+			</div>
 		</div>
-	);
-};
-
-export default Nav;
+  )
+}

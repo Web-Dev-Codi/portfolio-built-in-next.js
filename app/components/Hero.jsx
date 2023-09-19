@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Twitter from "../../public/images/twitter-256.svg";
 import Github from "../../public/images/github-256.svg";
