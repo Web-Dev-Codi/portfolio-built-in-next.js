@@ -2,16 +2,15 @@ import Link from "next/link";
 import path from "path";
 
 const handler = async (req, res) => {
-	const file = path.resolve("/files/BrianCordisco-CV-Web-Developer.pdf");
+	const file = path.resolve("/files/BrianCordisco-CV-Web-DeveloperV2.pdf");
 	const data = file.toString("base64");
 	return data;
 };
 
 export const ResumeButton = async () => {
+	const data = await handler();
 
-    const data = await handler();
-
-    return (
+	return (
 		<div className="nav_buttons">
 			<Link
 				href={data}
