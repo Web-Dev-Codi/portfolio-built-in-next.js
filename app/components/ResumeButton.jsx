@@ -2,7 +2,7 @@ import Link from "next/link";
 import path from "path";
 
 const handler = async (req, res) => {
-	const file = path.resolve("/files/BrianCordisco-CV-Web-DeveloperV2.pdf");
+	const file = path.resolve("/files/Brian-Cordisco-CV-Edited-Feb-24.pdf");
 	const data = file.toString("base64");
 	return data;
 };
