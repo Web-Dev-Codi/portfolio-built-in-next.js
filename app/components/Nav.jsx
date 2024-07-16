@@ -13,7 +13,7 @@ export default function Nav() {
 						<a
 							href="/"
 							className="name">
-							Brian Cordisco
+							Web Developer
 						</a>
 					</div>
 					<div className="nav_right">
